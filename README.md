@@ -31,23 +31,23 @@ Before running this project, ensure the following are installed:
 - cd devops-assessment-wexa
 
 2. Install dependencies:
-npm install
+- npm install
 
 3. Start the development server:
-npm run dev
+- npm run dev
 
 4. Open your browser at:
-http://localhost:3000
+- http://localhost:3000
 
 **Docker**
 1. Build Docker image locally:
-docker build -t devops-assessment:local .
+- docker build -t devops-assessment:local .
 
 2. Run the container:
-docker run -p 3000:3000 devops-assessment:local
+- docker run -p 3000:3000 devops-assessment:local
 
 3. Verify running container:
-docker ps
+- docker ps
 
 ## **GitHub Actions & GHCR**
 1. The workflow .github/workflows/docker-publish.yml automates:
@@ -55,14 +55,14 @@ docker ps
 - Push to GitHub Container Registry (GHCR).
 
 2. Example GHCR image URL:
-ghcr.io/ameenuddin612/devops-assessment-wexa:latest
+- ghcr.io/ameenuddin612/devops-assessment-wexa:latest
 
 ## **Kubernetes Deployment (Minikube)**
 1. Start Minikube:
-minikube start --driver=docker
+- minikube start --driver=docker
 
 2. Create a secret to pull GHCR image:
-kubectl create secret docker-registry ghcr-secret \
+- kubectl create secret docker-registry ghcr-secret \
   --docker-server=ghcr.io \
   --docker-username=your-github-username \
   --docker-password=<GHCR_TOKEN> \
@@ -71,17 +71,17 @@ kubectl create secret docker-registry ghcr-secret \
 Replace <GHCR_TOKEN> with your GitHub Personal Access Token and <example@gmail.com> with your Email ID.
 
 3. Apply Kubernetes manifests:
-kubectl apply -f k8s/deployment.yaml
-kubectl apply -f k8s/service.yaml
+- kubectl apply -f k8s/deployment.yaml
+- kubectl apply -f k8s/service.yaml
 
 4. Verify pods and services:
-kubectl get all
+- kubectl get all
 
 ## **Accessing the Application**
 1. Open the service via Minikube tunnel:
-minikube service devops-assessment-service
+- minikube service devops-assessment-service
 
 2. The output will give a URL similar to:
-http://127.0.0.1:PORT_NO.
+- http://127.0.0.1:PORT_NO.
 
 3. Open the URL in a browser to see the running application.
