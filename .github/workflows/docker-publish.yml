@@ -21,8 +21,8 @@ jobs:
         password: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Build Docker image
-      run: docker build -t ghcr.io/${{ github.repository_owner }}/devops-assessment-weva:latest .
+      run: docker build -t ghcr.io/ameenuddin612/devops-assessment-weva:latest .
 
     - name: Push Docker image
-      run: docker push ghcr.io/${{ github.repository_owner }}/devops-assessment-weva:latest
+      run: docker push ghcr.io/ameenuddin612/devops-assessment-weva:latest
 
