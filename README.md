@@ -82,6 +82,6 @@ kubectl get all
 minikube service devops-assessment-service
 
 2. The output will give a URL similar to:
-http://127.0.0.1:<PORT>
+http://127.0.0.1:PORT_NO.
 
 3. Open the URL in a browser to see the running application.
