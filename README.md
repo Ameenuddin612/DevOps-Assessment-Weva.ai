@@ -1,4 +1,4 @@
-**DevOps Assessment - Next.js Application**
+#**DevOps Assessment - Next.js Application**
 This repository contains a Next.js application containerized with Docker, automated with GitHub Actions, pushed to GitHub Container Registry (GHCR), and deployed on Kubernetes (Minikube).
 
 **Table of Contents**
