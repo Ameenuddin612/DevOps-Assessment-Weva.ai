@@ -17,8 +17,8 @@ jobs:
       uses: docker/login-action@v2
       with:
         registry: ghcr.io
-        username: ${{ github.actor }}
-        password: ${{ secrets.GITHUB_TOKEN }}
+        username: ameenuddin612 
+        password: ${{ secrets.GHCR_PAT }}
 
     - name: Build Docker image
       run: docker build -t ghcr.io/ameenuddin612/devops-assessment-weva:latest .
