@@ -21,8 +21,8 @@ jobs:
         password: ${{ secrets.GHCR_PAT }}
 
     - name: Build Docker image
-      run: docker build -t ghcr.io/ameenuddin612/devops-assessment-weva:latest .
+      run: docker build -t ghcr.io/ameenuddin612/devops-assessment-wexa:latest .
 
     - name: Push Docker image
-      run: docker push ghcr.io/ameenuddin612/devops-assessment-weva:latest
+      run: docker push ghcr.io/ameenuddin612/devops-assessment-wexa:latest
 
