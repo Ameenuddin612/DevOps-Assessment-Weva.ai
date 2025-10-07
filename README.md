@@ -27,8 +27,8 @@ Before running this project, ensure the following are installed:
 
 ## **Setup & Running Locally**
 1. Clone the repository:
-git clone https://github.com/Ameenuddin612/devops-assessment-wexa.git
-cd devops-assessment-wexa
+- git clone https://github.com/Ameenuddin612/devops-assessment-wexa.git
+- cd devops-assessment-wexa
 
 2. Install dependencies:
 npm install
