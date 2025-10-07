@@ -64,11 +64,11 @@ minikube start --driver=docker
 2. Create a secret to pull GHCR image:
 kubectl create secret docker-registry ghcr-secret \
   --docker-server=ghcr.io \
-  --docker-username=<your-github-username> \
+  --docker-username=your-github-username \
   --docker-password=<GHCR_TOKEN> \
-  --docker-email=example@email.com
+  --docker-email=<example@email.com>
 
-Replace <GHCR_TOKEN> with your GitHub Personal Access Token and example@gmail.com with your Email ID.
+Replace <GHCR_TOKEN> with your GitHub Personal Access Token and <example@gmail.com> with your Email ID.
 
 3. Apply Kubernetes manifests:
 kubectl apply -f k8s/deployment.yaml
