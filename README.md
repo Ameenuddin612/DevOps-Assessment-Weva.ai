@@ -1,7 +1,7 @@
-#**DevOps Assessment - Next.js Application**
+# **DevOps Assessment - Next.js Application**
 This repository contains a Next.js application containerized with Docker, automated with GitHub Actions, pushed to GitHub Container Registry (GHCR), and deployed on Kubernetes (Minikube).
 
-**Table of Contents**
+## **Table of Contents**
 - Project Overview
 - Prerequisites
 - Setup & Running Locally
@@ -10,13 +10,13 @@ This repository contains a Next.js application containerized with Docker, automa
 - Kubernetes Deployment (Minikube)
 - Accessing the Application
 
-**Project Overview**
+## **Project Overview**
 This project is part of the DevOps Internship Assessment. The objectives were:
 - Containerize a Next.js application using Docker.
 - Automate build and push to GitHub Container Registry (GHCR) using GitHub Actions.
 - Deploy the containerized app on Kubernetes using Minikube.
 
-**Prerequisites**
+## **Prerequisites**
 Before running this project, ensure the following are installed:
 - Node.js (v18+)
 - npm
@@ -25,7 +25,7 @@ Before running this project, ensure the following are installed:
 - Minikube
 - Git
 
-**Setup & Running Locally**
+## **Setup & Running Locally**
 1. Clone the repository:
 git clone https://github.com/Ameenuddin612/devops-assessment-wexa.git
 cd devops-assessment-wexa
@@ -49,7 +49,7 @@ docker run -p 3000:3000 devops-assessment:local
 3. Verify running container:
 docker ps
 
-**GitHub Actions & GHCR**
+## **GitHub Actions & GHCR**
 1. The workflow .github/workflows/docker-publish.yml automates:
 - Docker image build on push to main branch.
 - Push to GitHub Container Registry (GHCR).
@@ -57,7 +57,7 @@ docker ps
 2. Example GHCR image URL:
 ghcr.io/ameenuddin612/devops-assessment-wexa:latest
 
-**Kubernetes Deployment (Minikube)**
+## **Kubernetes Deployment (Minikube)**
 1. Start Minikube:
 minikube start --driver=docker
 
@@ -77,7 +77,7 @@ kubectl apply -f k8s/service.yaml
 4. Verify pods and services:
 kubectl get all
 
-**Accessing the Application**
+## **Accessing the Application**
 1. Open the service via Minikube tunnel:
 minikube service devops-assessment-service
 
